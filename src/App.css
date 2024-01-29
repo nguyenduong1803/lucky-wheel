@@ -1,5 +1,5 @@
 .app {
-  background-image: url(https://iist.com.vn/wp-content/uploads/2022/12/shutterstock_1182991069_huge-1.png);
+  background-image: url(https://images7.alphacoders.com/134/1345118.jpeg);
   background-size: cover;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   height: 100vh;
@@ -13,12 +13,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 800px;
+  width: 900px;
 }
 
 .wrapper-weel > div:first-child {
-  max-width: 600px;
-  max-height: 600px;
+  max-width: 900px;
+  max-height: 900px;
 }
 
 body {

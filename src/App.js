@@ -1,14 +1,24 @@
 import { useRef, useState } from "react";
 import "./App.css";
 import { Wheel } from "react-custom-roulette";
-import { Box, Button, Typography, Stack, Divider } from "@mui/material";
+import {
+  Box,
+  Button,
+  Typography,
+  Stack,
+  Divider,
+  TextField,
+} from "@mui/material";
 import rotate from "./assets/audio/rotate.mp3";
 import claping from "./assets/audio/claping.mp3";
 import { data } from "./data";
+import Menu from "./Menu";
 
 function App() {
   const [mustSpin, setMustSpin] = useState(false);
   const [prizeNumber, setPrizeNumber] = useState(0);
+  const [code, setCode] = useState("");
+  const [isSuccess, setIsSuccess] = useState(false);
   const [open, setOpen] = useState(false);
   const remainingData = useRef(data);
   const refRotate = useRef(null);
@@ -21,7 +31,7 @@ function App() {
   };
 
   const handleSpinClick = async () => {
-    if (!mustSpin) {
+    if (!mustSpin && remainingData.current.length > 0) {
       const randomElement =
         remainingData.current[
           Math.floor(Math.random() * remainingData.current.length)
@@ -45,6 +55,13 @@ function App() {
           refRotate.current.play();
         }, 1500);
       });
+    } else {
+    }
+  };
+
+  const handleSubmitCode = () => {
+    if (code === "iist2024") {
+      setIsSuccess(true);
     }
   };
 
@@ -62,37 +79,99 @@ function App() {
   return (
     <>
       <div className="app">
-        <div className="wrapper-weel">
-          <Wheel
-            outerBorderColor="#fff"
-            innerBorderWidth={8}
-            spinDuration={0.8}
-            innerBorderColor="#fff"
-            outerBorderWidth={8}
-            mustStartSpinning={mustSpin}
-            prizeNumber={prizeNumber}
-            data={data}
-            onStopSpinning={() => {
-              setMustSpin(false);
-              setOpen(true);
-              refRotate.current.pause();
-              refRotate.current.currentTime = 0;
-              refClaping.current.play();
-            }}
-            radiusLineColor="#fff"
-            radiusLineWidth={1}
-            textColors={["#ffffff"]}
+        {isSuccess && (
+          <Menu
+            remainingData={remainingData.current}
+            setPrizeNumber={setPrizeNumber}
+            setOpenModal={setOpen}
           />
-          <Button
-            sx={{ marginTop: "20px" }}
-            color="error"
-            size="large"
-            onClick={handleSpinClick}
-            variant="contained"
+        )}
+        <Box
+          sx={{
+            position: "fixed",
+            left: "30px",
+            top: "30px",
+          }}
+        >
+          <img src="https://iist.com.vn/wp-content/uploads/2018/09/Logo-IIST-e1537931075520.png" />
+        </Box>
+        {!isSuccess && (
+          <Box
+          onSubmit={handleSubmitCode}
+          component="form"
+            sx={{
+              marginTop:"-400px",
+              backgroundColor: "#fff",
+              p: 4,
+              display: "flex",
+              flexDirection: "column",
+              gap: 3,
+              borderRadius: "6px",
+            }}
           >
-            Quay số
-          </Button>
-        </div>
+            <TextField
+              onChange={(e) => setCode(e.target.value)}
+              size="large"
+              label="Code"
+              type="password"
+            />
+            <Button type="submit" color="error" variant="contained" size="large">
+              Nhập code
+            </Button>
+          </Box>
+        )}
+        {isSuccess && (
+          <Box position="relative" className="wrapper-weel">
+            <Wheel
+              fontSize={14}
+              fontWeight={400}
+              outerBorderColor="#fff"
+              innerBorderWidth={8}
+              spinDuration={0.8}
+              innerBorderColor="#fff"
+              outerBorderWidth={3}
+              mustStartSpinning={mustSpin}
+              prizeNumber={prizeNumber}
+              data={data}
+              onStopSpinning={() => {
+                setMustSpin(false);
+                setOpen(true);
+                refRotate.current.pause();
+                refRotate.current.currentTime = 0;
+                refClaping.current.play();
+              }}
+              radiusLineColor="#fff"
+              radiusLineWidth={1}
+              textColors={["#ffffff"]}
+            />
+            <Box
+              sx={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                zIndex: 400,
+                transform: "translate(-50%,-50%)",
+              }}
+            >
+              <Button
+                color="inherit"
+                size="large"
+                onClick={handleSpinClick}
+                variant="contained"
+                sx={{
+                  fontWeight: 600,
+                  backgroundColor: "#fff",
+                  fontSize: 28,
+                  height: "150px",
+                  width: "150px",
+                  borderRadius: "50%",
+                }}
+              >
+                Quay
+              </Button>
+            </Box>
+          </Box>
+        )}
       </div>
       <Box
         sx={{
@@ -122,11 +201,13 @@ function App() {
             ...computeStyle,
           }}
         >
-          <Typography color="error" variant="h2">
+          <Typography color="error" fontSize={40}>
             Câu hỏi dành cho bạn:
           </Typography>
-          <Divider sx={{my:2}}/>
-          <Typography fontSize={40}> {data[prizeNumber].question}</Typography>
+          <Divider sx={{ my: 2 }} />
+          <Typography fontSize={40} p={5}>
+            {data[prizeNumber].question}
+          </Typography>
           <Stack alignItems="end">
             <Button onClick={handleClose}>Đóng</Button>
           </Stack>
