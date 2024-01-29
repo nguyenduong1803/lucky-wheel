@@ -261,7 +261,7 @@ export const data = [
   {
     option: "Câu hỏi số 30",
     style: {
-      backgroundColor: "#e91e63",
+      backgroundColor: "#9c27b0",
       textColor: "white",
     },
     question:

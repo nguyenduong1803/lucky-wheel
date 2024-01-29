@@ -13,6 +13,7 @@ import rotate from "./assets/audio/rotate.mp3";
 import claping from "./assets/audio/claping.mp3";
 import { data } from "./data";
 import Menu from "./Menu";
+import SettingIcon from "./assets/audio/icons/setting";
 
 function App() {
   const [mustSpin, setMustSpin] = useState(false);
@@ -165,7 +166,7 @@ function App() {
               }}
             >
               <Button
-                color="error"
+                color="inherit"
                 size="large"
                 onClick={handleSpinClick}
                 variant="contained"
@@ -177,7 +178,7 @@ function App() {
                   borderRadius: "50%",
                 }}
               >
-                Quay
+                <SettingIcon />
               </Button>
             </Box>
           </Box>
