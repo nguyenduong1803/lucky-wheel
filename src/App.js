@@ -178,7 +178,7 @@ function App() {
                   borderRadius: "50%",
                 }}
               >
-                <SettingIcon />
+                <SettingIcon className="rotating" />
               </Button>
             </Box>
           </Box>

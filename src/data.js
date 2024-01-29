@@ -2,7 +2,7 @@ export const data = [
   {
     option: "Câu hỏi số 1",
     style: {
-      backgroundColor: "##9c27b0",
+      backgroundColor: "#607d8b",
       textColor: "white",
     },
     question:
@@ -46,7 +46,7 @@ export const data = [
   {
     option: "Câu hỏi số 6",
     style: {
-      backgroundColor: "#ffeb3b",
+      backgroundColor: "#eeb211",
       textColor: "white",
     },
     question:
@@ -154,7 +154,7 @@ export const data = [
   {
     option: "Câu hỏi số 18",
     style: {
-      backgroundColor: "#ffeb3b",
+      backgroundColor: "#eeb211",
       textColor: "white",
     },
     question:
