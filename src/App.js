@@ -20,7 +20,14 @@ function App() {
   const [code, setCode] = useState("");
   const [isSuccess, setIsSuccess] = useState(false);
   const [open, setOpen] = useState(false);
-  const remainingData = useRef(data);
+  const [remainingData, setRemainingData] = useState(() => {
+    const remainDataStore = localStorage.getItem("iist_remainData");
+    const dataStore = JSON.parse(remainDataStore);
+    if (dataStore && dataStore.length) {
+      return dataStore;
+    }
+    return data;
+  });
   const refRotate = useRef(null);
   const refClaping = useRef(null);
 
@@ -31,13 +38,11 @@ function App() {
   };
 
   const handleSpinClick = async () => {
-    if (!mustSpin && remainingData.current.length > 0) {
+    if (!mustSpin && remainingData.length > 0) {
       const randomElement =
-        remainingData.current[
-          Math.floor(Math.random() * remainingData.current.length)
-        ];
+        remainingData[Math.floor(Math.random() * remainingData.length)];
 
-      const newList = remainingData.current.filter(
+      const newList = remainingData.filter(
         (item) => item.option !== randomElement.option
       );
 
@@ -45,8 +50,8 @@ function App() {
         (item) => item.option === randomElement.option
       );
 
-      remainingData.current = newList;
-
+      setRemainingData(newList);
+      localStorage.setItem("iist_remainData", JSON.stringify(newList));
       setPrizeNumber(index);
       setMustSpin(true);
 
@@ -81,9 +86,10 @@ function App() {
       <div className="app">
         {isSuccess && (
           <Menu
-            remainingData={remainingData.current}
+            remainingData={remainingData}
             setPrizeNumber={setPrizeNumber}
             setOpenModal={setOpen}
+            setRemainingData={setRemainingData}
           />
         )}
         <Box
@@ -97,10 +103,10 @@ function App() {
         </Box>
         {!isSuccess && (
           <Box
-          onSubmit={handleSubmitCode}
-          component="form"
+            onSubmit={handleSubmitCode}
+            component="form"
             sx={{
-              marginTop:"-400px",
+              marginTop: "-400px",
               backgroundColor: "#fff",
               p: 4,
               display: "flex",
@@ -115,7 +121,12 @@ function App() {
               label="Code"
               type="password"
             />
-            <Button type="submit" color="error" variant="contained" size="large">
+            <Button
+              type="submit"
+              color="error"
+              variant="contained"
+              size="large"
+            >
               Nhập code
             </Button>
           </Box>
@@ -154,13 +165,12 @@ function App() {
               }}
             >
               <Button
-                color="inherit"
+                color="error"
                 size="large"
                 onClick={handleSpinClick}
                 variant="contained"
                 sx={{
                   fontWeight: 600,
-                  backgroundColor: "#fff",
                   fontSize: 28,
                   height: "150px",
                   width: "150px",

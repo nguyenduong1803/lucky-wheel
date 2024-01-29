@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {
   Box,
+  Button,
   Drawer,
   IconButton,
   List,
@@ -13,7 +14,12 @@ import {
 import BarIcon from "./assets/audio/icons/barIcon";
 import { data } from "./data";
 
-function Menu({ remainingData, setPrizeNumber, setOpenModal }) {
+function Menu({
+  remainingData,
+  setPrizeNumber,
+  setOpenModal,
+  setRemainingData,
+}) {
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState(0);
 
@@ -35,6 +41,12 @@ function Menu({ remainingData, setPrizeNumber, setOpenModal }) {
     setPrizeNumber(index);
     setOpen(false);
   };
+
+  const handleReset = () => {
+    setRemainingData(data);
+    localStorage.setItem("iist_remainData", JSON.stringify(data));
+  };
+
   return (
     <div>
       <Box sx={{ position: "fixed", top: "10px", right: "10px" }}>
@@ -76,6 +88,9 @@ function Menu({ remainingData, setPrizeNumber, setOpenModal }) {
                 );
               })}
             </List>
+            <Button onClick={handleReset} variant="outlined">
+              Chơi lại
+            </Button>
           </CustomTabPanel>
           <CustomTabPanel value={value} index={1}>
             <List
