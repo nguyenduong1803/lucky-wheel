@@ -5,8 +5,7 @@ export const data = [
       backgroundColor: "#607d8b",
       textColor: "white",
     },
-    question:
-      "Con gì mang được cả miếng gỗ lớn, nhưng không mang nổi một hòn sỏi nhỏ?",
+    question: "Công ty IIST thành lập ngày tháng năm nào?",
   },
   {
     option: "Câu hỏi số 2",
@@ -15,7 +14,7 @@ export const data = [
       textColor: "white",
     },
     question:
-      "Cái gì chặt không đứt, bứt không rời, phơi không khô, đốt không cháy?",
+      "Loại cây đặc trưng cho ngày tết, không hoa, không trái mà ma quỷ rất sợ?",
   },
   {
     option: "Câu hỏi số 3",
@@ -23,7 +22,7 @@ export const data = [
       backgroundColor: "#03a9f4",
       textColor: "white",
     },
-    question: "Cái gì có kích thước bằng con voi nhưng chẳng nặng gram nào cả?",
+    question: "Có tổng bao nhiêu chữ cái trong bảng chữ cái?",
   },
   {
     option: "Câu hỏi số 4",
@@ -31,8 +30,7 @@ export const data = [
       backgroundColor: "#009688",
       textColor: "white",
     },
-    question:
-      "Giả sử ta có 1 khúc vải, cắt nó ra làm 100 khúc, thời gian để cắt 1 khúc vải là 5 giây. Hỏi nếu cắt liên tục không ngừng nghỉ thì trong bao lâu sẽ cắt xong?",
+    question: "Tên tiếng Việt đầy đủ của công ty là gì?",
   },
   {
     option: "Câu hỏi số 5",
@@ -41,7 +39,7 @@ export const data = [
       textColor: "white",
     },
     question:
-      "Bạn có 'chiêu' nào để có thể thức trắng 7 ngày mà vẫn không thiếu ngủ?",
+      "“Tóp mỡ, dưa hành, câu đối đỏ, cây nêu, tràng pháo, bánh chưng xanh”. Câu này sai ở điểm nào và sửa lại như nào để thành câu đúng hoàn chỉnh?",
   },
   {
     option: "Câu hỏi số 6",
@@ -50,7 +48,7 @@ export const data = [
       textColor: "white",
     },
     question:
-      "Có 2 con vịt đi trước 2 con vịt, lại có 2 con vịt đi sau 2 con vịt và có 2 con vịt đi giữa 2 con vịt. Hỏi có mấy con vịt Ở Châu Phi, chim cánh cụt sống ở nước nào?",
+      "Bạn nhìn thấy hai cô gái giống hệt nhau và họ đều nói  rằng họ có cùng sinh nhật, có cùng cha mẹ, có cùng gia đình nhưng họ không phải chị em sinh đôi. Tại sao lại như vậy?",
   },
   {
     option: "Câu hỏi số 7",
@@ -58,8 +56,7 @@ export const data = [
       backgroundColor: "#ff9800",
       textColor: "white",
     },
-    question:
-      "Loại cây đặc trưng cho ngày tết, không hoa, không trái mà ma quỷ rất sợ?",
+    question: "Sang năm 2024 thì công ty thành lập được bao nhiêu năm?",
   },
   {
     option: "Câu hỏi số 8",
@@ -68,7 +65,7 @@ export const data = [
       textColor: "white",
     },
     question:
-      "Nước nào trên thế giới không có giao thừa: Việt Nam, Hàn Quốc hay Ấn Độ?",
+      "Tên ba vị thần tượng trưng cho sự giàu sang, hạnh phúc và sức khỏe",
   },
   {
     option: "Câu hỏi số 9",
@@ -77,7 +74,7 @@ export const data = [
       textColor: "white",
     },
     question:
-      "Con gì mang được cả miếng gỗ lớn, nhưng không mang nổi một hòn sỏi nhỏ?",
+      "Bạn có 'chiêu' nào để có thể thức trắng 7 ngày mà vẫn không thiếu ngủ?",
   },
   {
     option: "Câu hỏi số 10",
@@ -86,7 +83,7 @@ export const data = [
       textColor: "white",
     },
     question:
-      "Cái gì chặt không đứt, bứt không rời, phơi không khô, đốt không cháy?",
+      "Công ty đã đạt được bao nhiêu chứng chỉ ISO, kể tên những chứng chỉ ISO đó?",
   },
   {
     option: "Câu hỏi số 11",
@@ -94,7 +91,8 @@ export const data = [
       backgroundColor: "#673ab7",
       textColor: "white",
     },
-    question: "Cái gì có kích thước bằng con voi nhưng chẳng nặng gram nào cả?",
+    question:
+      "Cái gì trong trắng ngoài xanh trồng đậu trồng hành rồi thả heo vào?",
   },
   {
     option: "Câu hỏi số 12",
@@ -103,7 +101,7 @@ export const data = [
       textColor: "white",
     },
     question:
-      "Giả sử ta có 1 khúc vải, cắt nó ra làm 100 khúc, thời gian để cắt 1 khúc vải là 5 giây. Hỏi nếu cắt liên tục không ngừng nghỉ thì trong bao lâu sẽ cắt xong?",
+      "Nếu bác sĩ đưa cho bạn 3 viên thuốc và bảo bạn cứ nửa giờ uống một viên, thì sau bao lâu bạn sẽ uống hết số thuốc đó?",
   },
   {
     option: "Câu hỏi số 13",
@@ -112,7 +110,7 @@ export const data = [
       textColor: "white",
     },
     question:
-      "Bạn có 'chiêu' nào để có thể thức trắng 7 ngày mà vẫn không thiếu ngủ?",
+      "Công ty bắt đầu triển khai làm các dự án cho thị trường Outsourcing từ năm nào?",
   },
   {
     option: "Câu hỏi số 14",
@@ -121,7 +119,7 @@ export const data = [
       textColor: "white",
     },
     question:
-      "Có 2 con vịt đi trước 2 con vịt, lại có 2 con vịt đi sau 2 con vịt và có 2 con vịt đi giữa 2 con vịt. Hỏi có mấy con vịt Ở Châu Phi, chim cánh cụt sống ở nước nào?",
+      "Phong tục này giúp xua đi những điều không may mắn của năm cũ để sẵn sàng đón một năm mới tốt đẹp và vui vẻ hơn. Có nơi gọi đây là “ Tục tẩy trần đêm tất niên” . Đây là phong tục gì?",
   },
   {
     option: "Câu hỏi số 15",
@@ -130,7 +128,7 @@ export const data = [
       textColor: "white",
     },
     question:
-      "Loại cây đặc trưng cho ngày tết, không hoa, không trái mà ma quỷ rất sợ?",
+      "Có 2 con vịt đi trước 2 con vịt, lại có 2 con vịt đi sau 2 con vịt và có 2 con vịt đi giữa 2 con vịt. Hỏi có mấy con vịt",
   },
   {
     option: "Câu hỏi số 16",
@@ -138,8 +136,7 @@ export const data = [
       backgroundColor: "#009688",
       textColor: "white",
     },
-    question:
-      "Nước nào trên thế giới không có giao thừa: Việt Nam, Hàn Quốc hay Ấn Độ?",
+    question: "Dự án Outsourcing đầu tiên làm với khách hàng nào?",
   },
   {
     option: "Câu hỏi số 17",
@@ -147,8 +144,7 @@ export const data = [
       backgroundColor: "#8bc34a",
       textColor: "white",
     },
-    question:
-      "Con gì mang được cả miếng gỗ lớn, nhưng không mang nổi một hòn sỏi nhỏ?",
+    question: "Loài chim nào thường báo hiệu khi mùa xuân đến?",
   },
 
   {
@@ -157,8 +153,7 @@ export const data = [
       backgroundColor: "#eeb211",
       textColor: "white",
     },
-    question:
-      "Cái gì chặt không đứt, bứt không rời, phơi không khô, đốt không cháy?",
+    question: "Từ gì mà 100% nguời dân Việt Nam đều phát âm sai?",
   },
   {
     option: "Câu hỏi số 19",
@@ -166,7 +161,7 @@ export const data = [
       backgroundColor: "#ff9800",
       textColor: "white",
     },
-    question: "Cái gì có kích thước bằng con voi nhưng chẳng nặng gram nào cả?",
+    question: "Công ty hợp tác với khách hàng Viettel từ năm nào?",
   },
   {
     option: "Câu hỏi số 20",
@@ -174,8 +169,7 @@ export const data = [
       backgroundColor: "#795548",
       textColor: "white",
     },
-    question:
-      "Giả sử ta có 1 khúc vải, cắt nó ra làm 100 khúc, thời gian để cắt 1 khúc vải là 5 giây. Hỏi nếu cắt liên tục không ngừng nghỉ thì trong bao lâu sẽ cắt xong?",
+    question: "Trong các tỉnh thành của Việt Nam, ở đâu không có Tết?",
   },
   {
     option: "Câu hỏi số 21",
@@ -184,7 +178,7 @@ export const data = [
       textColor: "white",
     },
     question:
-      "Bạn có 'chiêu' nào để có thể thức trắng 7 ngày mà vẫn không thiếu ngủ?",
+      "Nam nói dối vào thứ Hai, thứ Ba và thứ Tư nhưng lại nói sự thật vào các ngày khác trong tuần. Lan nói dối vào thứ Năm, thứ Sáu và thứ Bảy nhưng lại nói sự thật vào các ngày khác trong tuần.Nam: Hôm qua tôi đã nói dối.Lan: Hôm qua tôi cũng nói dối. Vậy hôm qua là thứ mấy trong tuần?",
   },
   {
     option: "Câu hỏi số 22",
@@ -192,8 +186,7 @@ export const data = [
       backgroundColor: "#e91e63",
       textColor: "white",
     },
-    question:
-      "Có 2 con vịt đi trước 2 con vịt, lại có 2 con vịt đi sau 2 con vịt và có 2 con vịt đi giữa 2 con vịt. Hỏi có mấy con vịt Ở Châu Phi, chim cánh cụt sống ở nước nào?",
+    question: "Công ty hợp tác với khách hàng TSDV từ năm nào?",
   },
 
   {
@@ -203,7 +196,7 @@ export const data = [
       textColor: "white",
     },
     question:
-      "Loại cây đặc trưng cho ngày tết, không hoa, không trái mà ma quỷ rất sợ?",
+      "Mâm ngũ quả ở miền Nam thường có những loại quả nào? Ý nghĩa của mâm ngũ quả đó?",
   },
   {
     option: "Câu hỏi số 24",
@@ -212,7 +205,7 @@ export const data = [
       textColor: "white",
     },
     question:
-      "Nước nào trên thế giới không có giao thừa: Việt Nam, Hàn Quốc hay Ấn Độ?",
+      "Có một cây lê có hai cành, mỗi cành có 2 nhánh lớn, mỗi nhánh lớn có 2 nhánh nhỏ, mỗi nhánh nhỏ có 2 cái lá, cạnh mỗi cái lá có hai quả. Hỏi ở trên cây có bao nhiêu quả táo?",
   },
   {
     option: "Câu hỏi số 25",
@@ -220,8 +213,7 @@ export const data = [
       backgroundColor: "#00bcd4",
       textColor: "white",
     },
-    question:
-      "Con gì mang được cả miếng gỗ lớn, nhưng không mang nổi một hòn sỏi nhỏ?",
+    question: "Công ty hợp tác với khách hàng VDS từ năm nào?",
   },
   {
     option: "Câu hỏi số 26",
@@ -229,8 +221,7 @@ export const data = [
       backgroundColor: "#4caf50",
       textColor: "white",
     },
-    question:
-      "Cái gì chặt không đứt, bứt không rời, phơi không khô, đốt không cháy?",
+    question: "Khoảnh khắc chuyển tiếp từ năm này sang năm khác gọi là gì?",
   },
   {
     option: "Câu hỏi số 27",
@@ -238,7 +229,8 @@ export const data = [
       backgroundColor: "#cddc39",
       textColor: "white",
     },
-    question: "Cái gì có kích thước bằng con voi nhưng chẳng nặng gram nào cả?",
+    question:
+      "Nếu bạn có một cái, bạn muốn chia sẻ nó.  Nhưng một khi bạn chia sẻ nó, bạn không có nó. Đó là gì?",
   },
   {
     option: "Câu hỏi số 28",
@@ -246,8 +238,7 @@ export const data = [
       backgroundColor: "#ffc107",
       textColor: "white",
     },
-    question:
-      "Giả sử ta có 1 khúc vải, cắt nó ra làm 100 khúc, thời gian để cắt 1 khúc vải là 5 giây. Hỏi nếu cắt liên tục không ngừng nghỉ thì trong bao lâu sẽ cắt xong?",
+    question: "Năm 2020 công ty đã đạt giải thưởng nào?",
   },
   {
     option: "Câu hỏi số 29",
@@ -255,8 +246,7 @@ export const data = [
       backgroundColor: "#ff5722",
       textColor: "white",
     },
-    question:
-      "Bạn có 'chiêu' nào để có thể thức trắng 7 ngày mà vẫn không thiếu ngủ?",
+    question: "Nghi lễ diễn ra vào 23 tháng chạp âm lịch gọi là gì?",
   },
   {
     option: "Câu hỏi số 30",
@@ -264,7 +254,6 @@ export const data = [
       backgroundColor: "#9c27b0",
       textColor: "white",
     },
-    question:
-      "Có 2 con vịt đi trước 2 con vịt, lại có 2 con vịt đi sau 2 con vịt và có 2 con vịt đi giữa 2 con vịt. Hỏi có mấy con vịt Ở Châu Phi, chim cánh cụt sống ở nước nào?",
+    question: "Loài chim nào báo hiệu mùa xuân đến",
   },
 ];
