@@ -30,7 +30,7 @@ export const data = [
       backgroundColor: "#009688",
       textColor: "white",
     },
-    question: "Tên tiếng Việt đầy đủ của công ty là gì?",
+    question: "Công ty mình đã từng chuyển nhà bao nhiêu lần?",
   },
   {
     option: "Câu hỏi số 5",
@@ -83,7 +83,7 @@ export const data = [
       textColor: "white",
     },
     question:
-      "Công ty đã đạt được bao nhiêu chứng chỉ ISO, kể tên những chứng chỉ ISO đó?",
+      "Công ty đã đạt được chứng chỉ ISO về các hoạt động nào? Kể tên chính xác những chứng chỉ ISO đó?",
   },
   {
     option: "Câu hỏi số 11",
@@ -110,7 +110,7 @@ export const data = [
       textColor: "white",
     },
     question:
-      "Công ty bắt đầu triển khai làm các dự án cho thị trường Outsourcing từ năm nào?",
+      "Thông điệp 'GO GLOBAL' được nhắc đến lần đầu tiên trong chiến lược của Công ty năm nào?",
   },
   {
     option: "Câu hỏi số 14",
@@ -144,7 +144,7 @@ export const data = [
       backgroundColor: "#8bc34a",
       textColor: "white",
     },
-    question: "Loài chim nào thường báo hiệu khi mùa xuân đến?",
+    question: "Theo truyền thống, cây nêu được dựng vào ngày nào?",
   },
 
   {
@@ -161,7 +161,7 @@ export const data = [
       backgroundColor: "#ff9800",
       textColor: "white",
     },
-    question: "Công ty hợp tác với khách hàng Viettel từ năm nào?",
+    question: "Mảng outsouring của Công ty 'Tây tiến' từ khi nào?",
   },
   {
     option: "Câu hỏi số 20",
@@ -178,7 +178,7 @@ export const data = [
       textColor: "white",
     },
     question:
-      "Nam nói dối vào thứ Hai, thứ Ba và thứ Tư nhưng lại nói sự thật vào các ngày khác trong tuần. Lan nói dối vào thứ Năm, thứ Sáu và thứ Bảy nhưng lại nói sự thật vào các ngày khác trong tuần.Nam: Hôm qua tôi đã nói dối.Lan: Hôm qua tôi cũng nói dối. Vậy hôm qua là thứ mấy trong tuần?",
+      "Nam nói dối vào thứ Hai, thứ Ba và thứ Tư nhưng lại nói sự thật vào các ngày khác trong tuần. Lan nói dối vào thứ Năm, thứ Sáu và thứ Bảy nhưng lại nói sự thật vào các ngày khác trong tuần. Nam: Hôm qua tôi đã nói dối. Lan: Hôm qua tôi cũng nói dối. Vậy hôm qua là thứ mấy trong tuần?",
   },
   {
     option: "Câu hỏi số 22",
@@ -186,7 +186,7 @@ export const data = [
       backgroundColor: "#e91e63",
       textColor: "white",
     },
-    question: "Công ty hợp tác với khách hàng TSDV từ năm nào?",
+    question: "Trung tâm Giải pháp thành lập ngày tháng năm nào?",
   },
 
   {
@@ -213,7 +213,8 @@ export const data = [
       backgroundColor: "#00bcd4",
       textColor: "white",
     },
-    question: "Công ty hợp tác với khách hàng VDS từ năm nào?",
+    question:
+      "Dự án lớn nhất của Outsourcing tính đến thời điểm hiện tại là dự án nào?",
   },
   {
     option: "Câu hỏi số 26",
@@ -238,7 +239,8 @@ export const data = [
       backgroundColor: "#ffc107",
       textColor: "white",
     },
-    question: "Năm 2020 công ty đã đạt giải thưởng nào?",
+    question:
+      "Dự án nào của Công ty được nằm trong danh sách khen thưởng của Khách hàng?",
   },
   {
     option: "Câu hỏi số 29",
@@ -254,6 +256,7 @@ export const data = [
       backgroundColor: "#9c27b0",
       textColor: "white",
     },
-    question: "Loài chim nào báo hiệu mùa xuân đến",
+    question:
+      "Trung tâm Giải pháp đã và đang hỗ trợ triển khai những giải pháp nào?",
   },
 ];
